@@ -1,0 +1,420 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+.header{
+    font-size: 40px;
+    color: antiquewhite;
+    padding: 40px 50px;
+    background-color: black;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.header img {
+    width: 150px;
+    height: 150px;
+    animation: note 5s infinite linear;
+}
+@keyframes note{
+    0% {rotate: 0deg;}
+    30% {rotate: 15deg;}
+    60% {rotate: -15deg;}
+    80% {rotate: 0deg;}
+}
+.menu {
+    padding: auto;
+    border-top: 5px groove white;
+}
+#menu_li{
+    font-size: 30px;
+    text-align: center;
+    list-style: none;
+    color: rgb(255, 255, 255);
+    background-color: black;
+}
+.menu ul{
+    text-align: center;
+    list-style: none;
+    color: purple;
+    background-color: black;
+}
+.menu ul li{
+    display: inline-block;
+    position: relative;
+}
+.menu ul li a{
+    display: block;
+    padding: 20px ;
+    color: purple;
+    text-decoration: none;
+    text-align: center;
+    font-size: 25px;
+}
+.menu ul.dropdown li{
+    display: block;
+} 
+.menu ul.dropdown{
+    width:  100%;
+    background-color: black;
+    position: absolute;
+    z-index: 999;
+    display: none;
+}
+.menu:hover ul.dropdown{
+    color: black;
+    display: block;
+}
+.dropdown  a:hover {
+    transition: 0.5s;
+    text-decoration: underline;
+    color: rgb(216, 143, 216);
+}
+.abt{
+    background-image: url(slike/DSC_7217.JPG);
+    background-size: 240vh 140vh;
+    padding: 235px 300px;
+    filter: grayscale(100%);
+    background-repeat: no-repeat;
+    display:block;
+}
+.abt h2{
+    margin-left: -10%;
+    color: white;
+    font-size: 25px;
+    font-weight: bold;
+}
+.abt p {
+    font-size: 30px;
+    color: white;
+    font-weight: bold;
+}
+
+.social {
+    display: flex;
+    background-color: black;
+    justify-content: center;
+    font-size: 40px;
+}
+.social p{
+    color: white;
+}
+.social ul li{
+    display: inline;
+    list-style-type: none;
+    text-decoration: none;
+}
+.social  i{
+    color: blue;
+}
+
+
+.footer{
+    background-color: black;
+    color: white;
+    padding-top: 30vh;
+    display: flex;
+    justify-content: center;
+}
+.footer-menu :first-child{
+    font-style: italic;
+}
+.footer .footer-menu {
+    align-items: justify;
+    display: inline-block;
+    list-style-type: none;
+    margin-right: 25px;
+}
+.footer .footer-menu .menu-item{
+    display:flex;
+    font-size: 25px;
+}
+.footer .footer-menu .menu-item a {
+    text-decoration: none;
+    color: purple;
+}
+.footer .footer-menu .menu-item a:hover {
+    color: gray;
+    transition: 0.4 ease;
+}
+
+
+
+.info{
+    display: flex;
+    background-color: black;
+    padding-top: 10vh ;
+}
+.info-menu .info-item{
+    list-style-type: none;
+    color: whitesmoke;
+    list-style-type: none;
+    display: inline;
+}
+.info .info-menu :first-child{ 
+    margin-left: 20px; 
+    margin-right:  65vh;
+}
+.info .info-menu :last-child{
+    margin-left: 60vh;
+}
+
+.tickets {
+    background-color: black;
+}
+
+
+
+#t{
+    padding: 40px 40px;
+    display: flex;
+    justify-content: center;
+    font-weight: bold;
+    font-size: 80px;
+    color: white;
+}
+.concerts {
+    display: flex;
+    align-items: center;
+    margin: 20px;
+    margin-bottom: 20px;
+    padding: 0 10px;
+    background-color: black;
+    color: white;
+    border: 3px solid purple;
+    justify-content: space-between;
+}
+.concerts  h2{
+    border: 2px solid white;
+}
+.concerts a {
+    color: purple;
+    text-decoration: none;
+}
+.concerts button:hover{
+    background-color: purple;
+}
+.concerts a:hover {
+    color: white;
+    transition: 0.2s;
+}
+
+.trackshtml{
+    background: black;
+}
+#tracksheader{
+    padding: 40px 40px;
+    margin-bottom: 70px;
+    background-color: black;
+    display: flex;
+    justify-content: center;
+    font-weight: bold;
+    font-size: 80px;
+    color: white;
+}
+.t2023{
+    display: flex;
+}
+.t2022{
+    display: flex;
+}
+.t2022-2{
+    display: flex;
+}
+.t2021 {
+    display: flex;
+}
+.t2021-2{
+    display: flex;
+}
+#h1 {
+    color: white;
+    text-align: center;
+    border-bottom: 3px solid purple;
+    font-size: 40px;
+    margin-top: 40px;
+}
+.tracks{
+    align-items: center;
+    margin:  20px;
+    width: 300px;
+    height: 375px;
+    background-color: white;
+    border-radius: 20px;
+    box-shadow: 1px 4px 9px 1px purple;
+}
+.tracks img{
+    width: 300px;
+    height: 250px;
+    border-top-left-radius: 20px;
+    border-top-right-radius: 20px;
+}
+.tracks h2{
+    color: black;
+    font-size: 30px;
+    margin-top: 20px;
+    font-weight: bold;
+    padding: 10px;
+    display: block;
+}
+#contact {
+    font-size: 40px;
+    align-items: justify;
+    text-align: center;
+    color: antiquewhite;
+    padding: 40px 50px;
+    background-color: black;
+    border-bottom: 2px solid purple;
+}
+.contact-page {
+    background-color: black;
+}
+.forma {
+    display: block;
+    margin: 40px 40px;
+    color: whitesmoke;
+}
+#contact-title {
+    font-size: 30px;
+    text-transform: uppercase;
+}
+#contact-input {
+    width: 400px;
+    height: 30px;
+    margin-bottom: 30px;
+    box-shadow: 1px 3px 3px 1px  purple;
+    background-color:  rgb(8, 8, 8);
+    color: purple;
+}
+#contact-button {
+    width: 150px;
+    height: 30px;
+    margin-top: 25px;
+    color: blueviolet;
+    background-color: rgb(8, 8, 8);
+    text-decoration: underline;
+}
+#contact-button:hover {
+    text-decoration: none;
+    color: white;
+    background-color: purple;
+}
+@media screen and (min-width: 320px) and (max-width: 425px) {
+    head {
+        padding: 0;
+        margin: 0;
+        width: 100%;
+    }
+   body {
+    padding: 0;
+    margin: 0;
+    width: 100%;
+   }
+   .header{
+    margin: 0;
+    padding: 0;
+    width: 100%;
+    font-size: 10px;
+    text-align: center;
+   }
+   .header img {
+    width: 50px;
+    height: 50px;
+   }
+   .menu {
+    margin: 0;
+    padding: 0;
+    width: 100%;
+   }
+   #menu_li {
+    font-size: 15px;
+   }
+   .menu ul.dropdown{
+    margin: 0;
+    padding: 0;
+    width: 100%;
+   }
+   .menu ul li a {
+    font-size: 15px;
+   }
+   .abt p{
+    font-size: 10px;
+   }
+   .abt {
+    margin: 0;
+    padding: 0;
+    width: 100%;
+    background-color:purple;
+    padding-top: 100px;
+    padding-bottom: 100px;
+   }
+   .social {
+    font-size: 10px;
+   }
+   .social  li{
+    display: inline-block;
+    size: 10px;
+   }
+   .footer {
+    padding: 0;
+    margin: 0;
+    width: 100%;
+    display: inline-block;
+    background-color: black;
+    padding-top: 30px;
+    text-align: center;
+   }
+
+   .footer-menu{
+    background-color: black;
+   }
+   .footer .footer-menu .menu-item {
+    font-size: 10px;
+   }
+   .info  {
+    margin: 0;
+    padding: 0;
+    width: 100%;
+    padding-top: 50px;
+   }
+   .info .info-menu .info-item{
+    margin: 0;
+    font-size: 7px;
+    display: list-item;
+   }
+   .info .info-menu {
+    text-align: justify;
+   }
+   #tracksheader {
+    font-size: 20px;
+   }
+   .t2023 {
+    display: inline;
+   }
+   .t2022 {
+    display: list-item;
+   }
+   .t2022-2 {
+    display: list-item;
+   }
+   .t2021{
+    display: inline;
+   }
+   .t2021-2 {
+    display: inline;
+   }
+   #h1 {
+    font-size: 15px;
+   }
+   .tracks {
+    size: 25%;
+   }
+
+
+   
+   
+}
+
+ @media only screen and (min-width: 768px) and (max-width: 1024px) {  
+ }
